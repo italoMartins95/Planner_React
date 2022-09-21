@@ -1,0 +1,12 @@
+.select{
+    display: block;
+
+    min-width: 150px;
+    height: 28px;
+
+    outline: none;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}

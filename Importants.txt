@@ -1,0 +1,113 @@
+Guia de itens importantes do Projeto
+
+Instalação de dependências:
+   npm install react-icons --save (usado para inserir icones no projeto)
+   npm install react-router-dom (usado para fazer o roteamento das pages da nossa aplicação)
+   npm install json-server (usado para gerar um servidor para simular o backEnd, enviando e recebendo dados atraves de json)
+   npm instal uuid (gera id's no projeto)
+
+Ferramentas props:
+
+        import PropTypes from 'prop-types'
+
+            Function.propTypes = {
+                prop: PropTypes.[tipoPrimitivo]
+            }
+
+            Function.defaultProps = {
+                prop: 'valorDefault'
+            }
+
+        classe via prop:
+
+            className={`${styles.classePadrão} ${styles[props.propName]}`}
+
+Usando React Router Dom:
+
+        import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+                O 'BrowserRouter' é o ROTEADOR, o qual chamamos de Router (mas poderiamos chamá-lo por qualquer nome)
+                    Essa estrutura é responsavel por gerencias as rotas para renderização de componentes
+
+                O Routes é a estrutura que vai encapsular as rotas
+
+                O Route é responsavel por criar caminhos que vão nos direcionar a cada componente, isso ocorre atraves dos atributos:
+                            path='caminho' & element={<Component />}
+
+                O Link é responsavel por direcionar o usuário para o caminho que seguirá de acordo com a Rota anteriormente definida para um componente. O Link funciona como uma tag a, que direciona o usuário para outras páginas da sua aplicação.
+
+Usando If Else no JSX:
+
+    {
+        variavel && (<>Será exibido caso a variavel não seja null</>)
+    }
+
+    {
+        variavel == 'italo' ? (
+            <>Será exibido caso True</>
+        ):(
+            <>Será exibido caso False</>
+        )
+    }
+
+------------------------------------------------------------- React Hook's ----------------------------------------------------------------
+
+Usando useState:
+
+    const [varName , setVarName] = useState()
+
+    <input onChange={(e) => {
+        setVarName(e.target.value)
+    }}
+
+Usando useEffect:
+
+    useEffect(()=>{
+        descrição do metodo que irá receber dados de um fatch
+    } , [])
+
+Usando useNavegate():
+
+    import {useNavegate} from 'react-rauter-dom'
+
+    const nameConstante = useNavegate()
+
+    nameConstante('/caminho para Rauter' , {state: atributo: [atributoValue]})
+
+Usando useLocation():
+
+    const constanteName = useLocation()
+
+    constanteName.state.atributo
+
+    /*constanteName passa a ser uma constante que recebe um state atravez do React-Rauter-Dom devido ao uso do Hook useNavegate()
+
+Usando useParams():
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Usando JsonServer:
+
+        1° Criar arquivo json na Raiz do projeto. O arquivo será usado como fonte de dados para nossa aplicação WEB,
+        simulando dados de um Servidor onde será possivel realizar consultas bem como inclusões, exclusão e alterações(CRUD).
+        
+        2° Para este projeto, criamos o arquivo db.json. Dentro desse arquivo criamos dois atributos:
+
+            1° PROJECTS: este irá conter os projetos cadastrados pelos usuários do Costs.
+            2° CATEGORY: este irá conter as categorias possiveis para criação de novos projetos.
+
+        3° Em seguida vamos criar um Script dentro do arquivo package.json para que possamos incializar o servidor com os dados do arquivo
+        db.json que acabamos de criar.
+        Vamos adicionar o seguinte Script: 
+                        "backend": "json-server --watch db.json --port 5000"
+                        Iniciamos com npm run backend, que irá inicializar o servidor buscando o arquivo db.json e usando a porta 5000
+
+Usando metodo fecth:
+
+    fetch("URL p/ conexão com servidor" , {parâmetros do protocolo HTTP: method, headers e body})
+    .then(instruções para a resposta da requisição)
+    .catch(instruções caso algum ocorra algum erro ao executar as instruções anteriores)
+
+
+

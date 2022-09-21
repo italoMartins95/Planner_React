@@ -1,0 +1,65 @@
+.newAssignment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 270px;
+    height: 160px;
+
+    background-color: white;
+    border-radius: 20px;
+
+    box-shadow: 0 0 5px rgba(54, 53, 53, 0.484);
+}
+
+.newAssignment input[type='text']{
+    width: 220px;
+    height: 35px;
+
+    background-color: rgba(54, 53, 53, 0.052);
+    color: black;
+
+    font-size: 15px;
+
+    border: none;
+    outline: none;
+
+    padding: 0 10px;
+    margin: 15px;
+}
+
+.newAssignment > div{
+    margin-top: -5px;
+    margin-left: 20px;
+}
+
+.newAssignment input[type='date']{
+    height: 25px;
+
+    outline: none;
+
+    border: none;
+
+    margin: 8px 0;
+}
+
+.newAssignment button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: 40px;
+
+    background-color: rgb(49, 106, 136);
+    color: white;
+    
+    border-radius: 0 0 20px 20px;
+    font-size: 40px;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}

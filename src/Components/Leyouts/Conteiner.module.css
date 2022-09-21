@@ -1,0 +1,15 @@
+.mainConteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    width: auto;
+    height: calc(100vh - 40px - 70px);
+
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+
+    overflow: hidden;
+    overflow-x: scroll;
+}

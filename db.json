@@ -1,0 +1,52 @@
+{
+  "category": [
+    {
+      "name": "Casa",
+      "assignment": [
+        {
+          "listVerification": [
+            "arroz",
+            "feijão",
+            "macarrão",
+            "charque",
+            "Temperos",
+            "iorgute",
+            "melão",
+            "Coca-Cola"
+          ],
+          "listCompleted": [
+            "Temperos",
+            "Coca-Cola"
+          ],
+          "id": 177,
+          "name": "Compras",
+          "start": "2022-09-02",
+          "end": "2022-10-01",
+          "priorities": "Urgente",
+          "progress": "Não iniciada",
+          "notes": "Lista de compras pra fazer no início do mês"
+        },
+        {
+          "listVerification": [
+            "Tinta",
+            "Call",
+            "Pincel",
+            "Contratar mão de obra"
+          ],
+          "listCompleted": [
+            "Call",
+            "Pincel"
+          ],
+          "progress": "Em andamento",
+          "priorities": "Importante",
+          "start": "2022-08-15",
+          "id": 189,
+          "name": "Manutenção da fachada",
+          "end": "2022-09-30",
+          "notes": "Manutenção da fachada da casa "
+        }
+      ],
+      "id": 1
+    }
+  ]
+}
