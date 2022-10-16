@@ -29,12 +29,9 @@
         {
           "listVerification": [
             "Tinta",
-            "Call",
-            "Pincel",
-            "Contratar mão de obra"
+            "Pincel"
           ],
           "listCompleted": [
-            "Call",
             "Pincel"
           ],
           "progress": "Em andamento",
